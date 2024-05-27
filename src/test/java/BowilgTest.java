@@ -3,7 +3,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BowilgTest {
-
     Game g = new Game();
 
     public void rollMany(int n, int pins) {
@@ -40,7 +39,7 @@ public class BowilgTest {
     }
 
     @Test
-    public void perfectGame() {
+    public void perfectGame(){
         rollMany(12, 10);
         assertEquals(300, g.score());
     }
